@@ -10,7 +10,7 @@ on:
 
 jobs:
   input-display-job:
-  runs-on:  ubuntu-latest
-  steps:
-    - name:  Display input message
-      run:  echo "${{ github.event.inputs.message }}"
+    runs-on:  ubuntu-latest
+    steps:
+      - name:  Display input message
+        run:  echo "${{ github.event.inputs.message }}"
