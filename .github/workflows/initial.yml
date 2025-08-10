@@ -1,0 +1,10 @@
+name:  Initial Pipeline
+
+on:  [push]
+
+jobs:
+  display-text:
+    runs-on:  ubuntu-latest
+    steps:
+      - name:  Print Text
+        run:  echo "Hello"
