@@ -1,0 +1,16 @@
+name:  Take and display input
+
+on:
+  workflow_dispatch:
+    inputs:
+      message:
+        description:  "Input"
+        required:  true
+        default:   "This text is passed using input"
+
+jobs:
+  input-display-job:
+  runs-on:  ubuntu-latest
+  steps:
+    - name:  Display input message
+      run:  echo "${{ github.event.inputs.message }}"
